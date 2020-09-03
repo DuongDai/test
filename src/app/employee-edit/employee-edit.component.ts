@@ -4,7 +4,6 @@ import { EmployeeService } from '../services/employee.service';
 import { DepartmentService } from '../services/department.service';
 import { PositionService } from '../services/position.service';
 import { ActivatedRoute } from '@angular/router';
-import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-employee-edit',
   templateUrl: './employee-edit.component.html',
@@ -16,8 +15,7 @@ export class EmployeeEditComponent implements OnInit {
   	 private employeesService: EmployeeService,
      private positionService: PositionService,
      private departmentService: DepartmentService,
-     private route: ActivatedRoute,
-     private datePipe: DatePipe) { }
+     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   	this.getPhongBan();
@@ -75,9 +73,8 @@ export class EmployeeEditComponent implements OnInit {
   		this.model.maChucVu = this.result.object.maChucVu;
   		this.model.hoTen = this.result.object.hoTen;
   		this.model.mail = this.result.object.mail;
-  		this.model.soDienThoai = this.result.object.soDienThoai;  
-  		
-  		
+  		this.model.namSinh = this.result.object.namSinh;
+  		this.model.soDienThoai = this.result.object.soDienThoai;
 
   	})
   }
