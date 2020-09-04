@@ -7,7 +7,7 @@ export class CategoryModel{
 
 	constructor(){
 		var fb = new FormBuilder();
-		this.formGroup = fb.group({})
+		this.formGroup = fb.group({});
 		this.formGroup.addControl('categoryName', new FormControl('', Validators.required));
 	}
 

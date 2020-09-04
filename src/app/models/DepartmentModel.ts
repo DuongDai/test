@@ -6,7 +6,7 @@ export class DepartmentModel{
 
 	constructor(){
 		var fb = new FormBuilder();
-		this.formGroup = fb.group({})
+		this.formGroup = fb.group({});
 		this.formGroup.addControl('tenPhongBan', new FormControl('', Validators.required));
 	}
 

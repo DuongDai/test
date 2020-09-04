@@ -7,7 +7,7 @@ export class PositionModel{
 
 	constructor(){
 		var fb = new FormBuilder();
-		this.formGroup = fb.group({})
+		this.formGroup = fb.group({});
 		this.formGroup.addControl('tenChucVu', new FormControl('', Validators.required));
 	}
 }

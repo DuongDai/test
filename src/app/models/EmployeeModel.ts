@@ -18,7 +18,7 @@ export class EmployeeModel{
 
 	constructor(){
 		var fb = new FormBuilder();
-		this.formGroup = fb.group({})
+		this.formGroup = fb.group({});
 		this.formGroup.addControl('hoTen', new FormControl('', Validators.required));
         this.formGroup.addControl('mail', new FormControl('', Validators.required));
         this.formGroup.addControl('soDienThoai', new FormControl('', Validators.required));

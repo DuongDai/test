@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PositionModel } from '../models/positionModel';
+import { PositionModel } from '../models/PositionModel';
 import { PositionService } from '../services/position.service';
 
 @Component({
